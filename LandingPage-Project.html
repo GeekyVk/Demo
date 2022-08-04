@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="StyleStarbucks.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <a href="#"><img src="logo.png" alt="NoImage"></a>
+        <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's new</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Its Not just a coffee <br> It is <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Provident harum commodi ducimus eius consectetur optio eos 
+                 quasi obcaecati suscipit? Temporibus id illo libero, 
+                nesciunt voluptatibus nobis totam? Repellendus, nostrum ipsa.</p>
+            
+            <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+            <img src="img1.png" class="starbucks">
+        </div>
+        </div>
+        <ul class="Coffees">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeColor('#d752b1')"></li>
+        </ul>
+        <ul class="sml">
+            <li><a href="#"><img src="Facebook.png" ></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+            function imgSlider(anything) {
+                document.querySelector('.starbucks').src = anything
+            }
+
+            function changeColor(color) {
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
